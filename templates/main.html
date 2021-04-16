@@ -1,0 +1,22 @@
+<body>
+    {% block content %}
+        Names go here:
+    {% for name in h_names %}
+        Name: {{ name }} <br>
+    {% endfor %}
+
+    {% endblock %}
+
+    {% block movies %}
+        Movies go here: <br>
+    {% for movie in h_rt %}
+
+    {{ movie.name }}
+    <a href="{{ movie.name }}">
+    <img class="{{movie.name}}"
+    src="{{ movie.img_link }}"
+    </a> <br>
+    {% endfor %}
+
+    {% endblock %}
+</body>
