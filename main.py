@@ -2,10 +2,6 @@ from flask import Flask, render_template
 from scrapers import RT
 app = Flask(__name__)
 
-data = {
-    'name': 'Dima',
-    'last': 'Kapitan'
-}
 
 rt_data = RT.get_front_page()
 
