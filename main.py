@@ -7,14 +7,21 @@ data = {
     'last': 'Kapitan'
 }
 
-names = ['Lauren', 'Dima', 'Laurima']
-
 rt_data = RT.get_front_page()
 
-@app.route('/sup')
+@app.route('/movies')
 def main():
-    return render_template('main.html', h_names=names, h_rt=rt_data)
+    return render_template('movies.html', h_rt=rt_data)
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
 
 if __name__ == '__main__':
-    app.run(host='192.168.1.248', port=80)
+    app.run(host='0.0.0.0', port=80)
     

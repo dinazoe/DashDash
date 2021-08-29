@@ -10,6 +10,14 @@
 # Java class files
 *.class
 
+# virtual environment
+dash/
+/dash
+
+# vscode related artifacts
+/.vscode
+.vscode/
+
 # Generated files
 bin/
 gen/
@@ -83,3 +91,8 @@ lint/generated/
 lint/outputs/
 lint/tmp/
 # lint/reports/
+
+api_key.txt
+
+/dash
+dash

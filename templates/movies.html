@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+    {% block content %}
+    {% for movie in h_rt %}
+
+    <div>
+    <a href="{{movie.href}}" target="_blank">{{ movie.name }}</a> 
+    IMDB: {{movie.imdb}}
+    RottenTomatoe: {{movie.rt_rating}}
+    MetaCritic: {{movie.mc}}
+    <a href="{{movie.href}}"><img class="{{ movie.name }}"src="{{ movie.img_link }}"</a>
+    </div>
+
+    {% endfor %}
+    {% endblock %}
