@@ -16,12 +16,7 @@ Dashboard of movies scrapped from rottentomatoes, metacritic, imdb. Uses flask a
 
 - Run the command to activate the virtual environment
     '''
-    .\DashboardTest\Scripts\activate
+    .\DashboardTest\Scripts\activate.ps1
     '''
-- Run command below to install flask and sql alchemy:
-    pip3 install flask flask-sqlalchemy
-
-- To use the scraper
-    '''
-    pip3 install requests beautifulsoup4
-    '''
+- Run command below to all the dependencies
+    pip install -r requirements.txt
