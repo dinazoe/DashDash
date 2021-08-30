@@ -50,6 +50,3 @@ def get_rt_rating(url):
     for e in elements:
         for child in e:
             pass
-
-data = get_front_page()
-print(data)

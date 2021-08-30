@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, url_for, flash, redirect
-#from scrapers import RT
+from scrapers import RT
 import sqlite3
 from werkzeug.exceptions import abort
 
@@ -9,8 +9,8 @@ def get_db_connection():
     return conn
 
 
-#rt_data = RT.get_front_page()
-rt_data = None
+rt_data = RT.get_front_page()
+#rt_data = None
 
 
 app = Flask(__name__)
